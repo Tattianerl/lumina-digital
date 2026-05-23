@@ -1,0 +1,119 @@
+.card {
+  position: relative;
+
+  background-color: white;
+
+  padding: 3rem 2rem;
+
+  border-radius: 24px;
+
+  border: 1px solid var(--color-border);
+
+  box-shadow: var(--shadow-sm);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+
+  box-shadow: var(--shadow-md);
+}
+
+.featured {
+  border: 2px solid var(--color-primary);
+
+  transform: scale(1.03);
+}
+
+.badge {
+  position: absolute;
+
+  top: -12px;
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  background-color: var(--color-primary);
+
+  color: white;
+
+  padding: 0.4rem 1rem;
+
+  border-radius: 999px;
+
+  font-size: 0.85rem;
+
+  font-weight: 600;
+}
+
+.card h3 {
+  font-size: 1.5rem;
+
+  margin-bottom: 1rem;
+
+  text-align: center;
+}
+
+.card strong {
+  display: block;
+
+  font-size: 3rem;
+
+  color: var(--color-primary);
+
+  text-align: center;
+
+  margin-bottom: 1rem;
+}
+
+.card p {
+  text-align: center;
+
+  color: var(--color-text-light);
+
+  margin-bottom: 2rem;
+
+  line-height: 1.6;
+}
+
+.card ul {
+  display: flex;
+  flex-direction: column;
+
+  gap: 1rem;
+
+  margin-bottom: 2rem;
+}
+
+.card li {
+  color: var(--color-text);
+}
+
+.card a {
+  display: block;
+
+  text-align: center;
+
+  background-color: var(--color-primary);
+
+  color: white;
+
+  padding: 1rem;
+
+  border-radius: var(--radius-md);
+
+  font-weight: 600;
+
+  transition:
+    background-color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.card a:hover {
+  background-color: #1d4ed8;
+
+  transform: translateY(-2px);
+}

@@ -1,0 +1,61 @@
+:root {
+
+  /* COLORS */
+
+  --color-primary: #2563eb;
+
+  --color-text: #0f172a;
+
+  --color-text-light: #475569;
+
+  --color-surface: #ffffff;
+
+  --color-background: #f8fafc;
+
+  --color-border: #e2e8f0;
+
+
+  /* SHADOWS */
+
+  --shadow-sm:
+    0 2px 8px rgba(0, 0, 0, 0.05);
+
+  --shadow-md:
+    0 8px 24px rgba(0, 0, 0, 0.08);
+
+
+  /* BORDER RADIUS */
+
+  --radius-sm: 8px;
+
+  --radius-md: 12px;
+
+  --radius-lg: 24px;
+
+
+  /* TRANSITIONS */
+  --transition-color:
+  color 0.3s ease;
+
+  --transition-default:
+    all 0.3s ease;
+}
+body {
+  font-family: var(--font-primary);
+  background-color: var(--color-background);
+  color: var(--color-text);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  padding: 6rem 1.5rem;
+}
+
+.container {
+  width: 100%;
+  max-width: var(--container-width);
+  margin: 0 auto;
+}

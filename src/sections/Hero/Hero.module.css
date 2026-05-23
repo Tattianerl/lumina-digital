@@ -1,0 +1,180 @@
+.hero {
+  padding: 6rem 1.5rem;
+  overflow: hidden;
+}
+
+.heroContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4rem;
+
+  min-height: calc(100vh - 80px);
+}
+
+.content {
+  flex: 1;
+}
+.content h1 {
+  font-size: 3.5rem;
+
+  line-height: 1.1;
+
+  word-break: break-word;
+
+  margin-bottom: 1.5rem;
+
+  color: var(--color-text);
+}
+.badge {
+  display: inline-block;
+
+  background-color: #dbeafe;
+  color: var(--color-primary);
+
+  padding: 0.5rem 1rem;
+
+  border-radius: 999px;
+
+  font-size: 0.9rem;
+  font-weight: 600;
+
+  margin-bottom: 1.5rem;
+}
+
+.content h1 {
+  font-size: 3.5rem;
+  line-height: 1.1;
+
+  margin-bottom: 1.5rem;
+
+  color: var(--color-text);
+}
+
+.content p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+
+  color: var(--color-text-light);
+
+  margin-bottom: 2rem;
+
+  max-width: 600px;
+}
+
+.actions {
+  display: flex;
+  gap: 1rem;
+}
+
+.primaryButton,
+.secondaryButton {
+  padding: 1rem 1.8rem;
+
+  border-radius: var(--radius-md);
+
+  font-weight: 600;
+
+  transition:
+    transform 0.3s ease,
+    background-color 0.3s ease;
+}
+
+.primaryButton {
+  background-color: var(--color-primary);
+  color: white;
+}
+
+.primaryButton:hover {
+  background-color: #1d4ed8;
+  transform: translateY(-2px);
+}
+
+.secondaryButton {
+  border: 1px solid var(--color-border);
+  color: var(--color-text);
+  background-color: white;
+}
+
+.secondaryButton:hover {
+  transform: translateY(-2px);
+}
+
+.imageContainer {
+  flex: 1;
+}
+
+.imageContainer img {
+  width: 100%;
+   display: block;
+  border-radius: var(--radius-lg);
+
+  box-shadow: var(--shadow-md);
+
+  object-fit: cover;
+}
+
+@media (max-width: 992px) {
+
+  .heroContainer {
+    flex-direction: column;
+
+    text-align: center;
+
+    justify-content: center;
+  }
+
+  .content p {
+    margin-inline: auto;
+  }
+
+  .actions {
+    justify-content: center;
+
+    flex-wrap: wrap;
+  }
+
+  .imageContainer {
+    width: 100%;
+  }
+}
+@media (max-width: 992px) and (orientation: landscape) {
+
+  .hero {
+    padding: 4rem 1.5rem;
+  }
+
+  .content h1 {
+    font-size: 2.8rem;
+    word-break: break-word;
+  }
+
+  .heroContainer {
+    gap: 2rem;
+  }
+}
+@media (max-width: 576px) {
+
+  .hero {
+    padding: 4rem 1rem;
+  }
+
+  .content h1 {
+    font-size: 2.2rem;
+  }
+
+  .content p {
+    font-size: 1rem;
+  }
+
+  .actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .primaryButton,
+  .secondaryButton {
+    width: 100%;
+    text-align: center;
+  }
+}

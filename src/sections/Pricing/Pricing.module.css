@@ -1,0 +1,54 @@
+.pricing {
+  padding: 6rem 1.5rem;
+
+  background-color: #f8fafc;
+}
+
+.header {
+  text-align: center;
+
+  max-width: 700px;
+
+  margin: 0 auto 4rem;
+}
+
+.header span {
+  color: var(--color-primary);
+
+  font-weight: 600;
+
+  display: inline-block;
+
+  margin-bottom: 1rem;
+}
+
+.header h2 {
+  font-size: 2.5rem;
+
+  margin-bottom: 1rem;
+}
+
+.header p {
+  color: var(--color-text-light);
+
+  line-height: 1.7;
+}
+
+.grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 2rem;
+}
+
+@media (max-width: 992px) {
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .header h2 {
+    font-size: 2rem;
+  }
+}
