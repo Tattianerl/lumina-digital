@@ -37,13 +37,21 @@ function Hero() {
               </a>
             </div>
          </motion.div>
+          
+          <motion.div 
+             className={styles.imageContainer}
+            
+              initial={{ opacity: 0, x: 50 }}
 
-          <div className={styles.imageContainer}>
+              animate={{ opacity: 1, x: 0 }}
+
+              transition={{ duration: 0.8 }}
+            >
             <img
               src="https://images.unsplash.com/photo-1498050108023-c5249f4df085"
              alt="Profissional desenvolvendo soluções digitais modernas em um notebook"
             />
-          </div>
+          </motion.div>
 
         </div>
       </section>

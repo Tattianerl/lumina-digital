@@ -4,6 +4,7 @@ import {
   FaInstagram,
   FaLinkedin,
   FaGithub,
+  FaWhatsapp
 } from "react-icons/fa";
 
 function Footer() {
@@ -47,17 +48,44 @@ function Footer() {
 
           <div className={styles.icons}>
 
-            <a href="/">
-              <FaInstagram />
-            </a>
+            <a 
+                href="https://instagram.com/limatati1" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+                className={styles.socialLink}
+              >
+                <FaInstagram />
+              </a>
 
-            <a href="/">
-              <FaLinkedin />
-            </a>
-
-            <a href="/">
-              <FaGithub />
-            </a>
+            <a 
+                href="https://linkedin.com/in/tati-lima85" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+                className={styles.socialLink}
+              >
+                <FaLinkedin />
+              </a>
+            <a 
+                href="https://github.com/Tattianerl" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                aria-label="GitHub"
+                className={styles.socialLink}
+              >
+                <FaGithub />
+              </a>
+              <a 
+                href="https://wa.me/5521998977628" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                aria-label="WhatsApp"
+                className={styles.socialLink}
+              >
+                <FaWhatsapp />
+              </a>
+              
 
           </div>
         </div>
