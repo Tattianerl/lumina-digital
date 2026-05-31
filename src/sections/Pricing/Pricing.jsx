@@ -60,11 +60,11 @@ function Pricing() {
         <div className={styles.header}>
           <span>Planos</span>
 
-          <h2>
+         <h2 className="sectionTitle">
             Escolha a solução ideal para seu negócio
           </h2>
 
-          <p>
+          <p className="sectionDescription">
             Planos modernos e flexíveis para destacar sua marca
             na internet com profissionalismo.
           </p>

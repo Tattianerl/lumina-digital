@@ -3,21 +3,20 @@ import styles from "./CTA.module.css";
 function CTA() {
   return (
     <section className={styles.cta}>
-      {/* O container global apenas limita a largura máxima das telas */}
+    
       <div className="container">
         
-        {/* O ctaContainer cria o bloco com fundo azul degradê */}
         <div className={styles.ctaContainer}>
           
-          {/* O content organiza o texto e o botão verticalmente */}
+        
           <div className={styles.content}>
             <span>Vamos trabalhar juntos</span>
 
-            <h2>
+            <h2 className="sectionTitle">
               Sua presença digital começa com um projeto profissional
             </h2>
 
-            <p>
+            <p className="sectionDescription">
               Desenvolvemos landing pages modernas, responsivas e
               estratégicas para destacar sua marca na internet.
             </p>

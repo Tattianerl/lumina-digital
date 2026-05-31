@@ -2,6 +2,7 @@
   width: 100%;
   display: flex;
   justify-content: center;
+  margin-top: 2rem;
 }
 
 .ctaContainer {
@@ -10,81 +11,118 @@
     #2563eb,
     #60a5fa
   );
-  border-radius: var(--radius-lg); /* Usa seus 24px globais */
-  padding: 5rem 2rem;
-  text-align: center;
-  color: white;
-  position: relative;
-  overflow: hidden;
+
   width: 100%;
+
+  padding: 5rem 2rem;
+
+  border-radius: var(--radius-lg);
+
+  text-align: center;
+
+  color: white;
+
+  position: relative;
+
+  overflow: hidden;
 }
 
-/* Ativa o Flexbox vertical para controlar o fluxo do texto e do botão */
 .content {
   max-width: 700px;
+
   margin: 0 auto;
+
   display: flex;
+
   flex-direction: column;
+
   align-items: center;
 }
 
 .content span {
   display: inline-block;
-  background-color: rgba(255, 255, 255, 0.2);
+
   padding: 0.5rem 1rem;
+
+  margin-bottom: 1.5rem;
+
   border-radius: 999px;
-  margin-bottom: 1.5rem; /* Espaço abaixo da tag */
+
+  background-color: rgba(255, 255, 255, 0.2);
+
   font-weight: 600;
 }
 
 .content h2 {
-  font-size: clamp(2rem, 4vw, 3rem); /* Copia o comportamento fluido do seu global */
+  font-size: clamp(2rem, 4vw, 3rem);
+
   line-height: 1.2;
-  margin-top: 0;
-  margin-bottom: 1.5rem; /* Espaço entre título e parágrafo */
+
+  margin-bottom: 1.5rem;
 }
 
 .content p {
   font-size: 1.1rem;
+
   line-height: 1.7;
-  margin-top: 0;
-  margin-bottom: 2.5rem; /* O empurrão correto que afasta o botão do texto */
+
+  margin-bottom: 2.5rem;
+
   opacity: 0.95;
 }
 
 .button {
   display: inline-flex;
+
   align-items: center;
+
   justify-content: center;
-  
-  background-color: white;
-  color: var(--color-primary); /* Usa o seu azul #2563eb */
-  border-radius: var(--radius-sm); /* Usa seus 8px globais */
-  
+
   padding: 1rem 2rem;
+
+  border-radius: var(--radius-sm);
+
+  background-color: white;
+
+  color: var(--color-primary);
+
+  text-decoration: none;
+
   font-weight: 700;
-  text-decoration: none; 
-  transition: var(--transition-default); /* Usa sua transição de 0.3s */
+
+  transition:
+    transform 0.3s ease,
+    background-color 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .button:hover {
   transform: translateY(-3px);
+
   background-color: #f8fafc;
-  box-shadow: var(--shadow-md); /* Usa sua sombra global */
+
+  box-shadow: var(--shadow-md);
 }
 
-/* Responsividade para Celulares */
+.button:focus-visible {
+  outline: 2px solid white;
+
+  outline-offset: 4px;
+}
+
 @media (max-width: 768px) {
+
   .ctaContainer {
     padding: 4rem 1.5rem;
   }
 
   .content p {
-    margin-bottom: 2rem; /* Espaçamento ligeiramente menor no mobile */
+    margin-bottom: 2rem;
   }
 
   .button {
+    width: 100%;
+
     display: flex;
-    width: 100%; /* Botão vira bloco inteiro no celular */
   }
 }

@@ -11,11 +11,11 @@ function About() {
         <div className={styles.content}>
           <span>Sobre nós</span>
 
-          <h2>
+          <h2 className="sectionTitle">
             Transformamos ideias em experiências digitais modernas
           </h2>
 
-          <p>
+           <p>
             Desenvolvemos soluções digitais focadas em design,
             performance e experiência do usuário. Nosso objetivo
             é criar produtos profissionais que fortaleçam marcas

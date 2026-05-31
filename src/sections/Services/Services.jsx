@@ -49,11 +49,11 @@ function Services() {
         <div className={styles.header}>
           <span>Serviços</span>
 
-          <h2>
+          <h2 className="sectionTitle">
             Soluções digitais para o seu negócio
           </h2>
 
-          <p>
+          <p className="sectionDescription">
             Criamos experiências modernas, funcionais e
             profissionais para fortalecer sua marca online.
           </p>

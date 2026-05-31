@@ -89,11 +89,11 @@ function Contact() {
         <div className={styles.header}>
           <span>Contato</span>
 
-          <h2>
+           <h2 className="sectionTitle">
             Vamos conversar sobre seu projeto
           </h2>
 
-          <p>
+          <p className="sectionDescription">
             Entre em contato para solicitar um orçamento
             ou tirar dúvidas sobre nossos serviços.
           </p>

@@ -52,11 +52,11 @@ function Features() {
         <div className={styles.header}>
           <span>Diferenciais</span>
 
-          <h2>
+          <h2 className="sectionTitle">
             Por que escolher nossos serviços
           </h2>
 
-          <p>
+          <p className="sectionDescription">
             Desenvolvemos soluções modernas com foco em
             experiência, qualidade e presença digital.
           </p>

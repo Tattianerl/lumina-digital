@@ -1,5 +1,5 @@
 .features {
-  padding: 6rem 1.5rem;
+  padding: 5rem 1.5rem;
 
   background-color: white;
 }
@@ -9,7 +9,7 @@
 
   max-width: 700px;
 
-  margin: 0 auto 4rem;
+  margin: 0 auto 3rem;
 }
 
 .header span {
@@ -20,18 +20,6 @@
   display: inline-block;
 
   margin-bottom: 1rem;
-}
-
-.header h2 {
-  font-size: 2.5rem;
-
-  margin-bottom: 1rem;
-}
-
-.header p {
-  color: var(--color-text-light);
-
-  line-height: 1.7;
 }
 
 .grid {
@@ -48,9 +36,6 @@
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .header h2 {
-    font-size: 2rem;
-  }
 }
 
 @media (max-width: 576px) {
